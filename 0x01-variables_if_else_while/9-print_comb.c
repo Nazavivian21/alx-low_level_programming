@@ -3,7 +3,7 @@
 /**
  * main - Pinrts all possible combinations of single-digit numbers
  *
- * Return 0 on Success
+ * Return: 0 on Success
  */
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
 	{
 		putchar(i);
 
-		if ( i < 9)
+		if (i < 9)
 		{
 			putchar(',');
 			putchar(' ');
