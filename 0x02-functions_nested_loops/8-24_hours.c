@@ -2,8 +2,7 @@
 
 /**
  * jack_bauer - a function that prints every minute of the day of Jack Bauer.
- * @h: a variable that serves as the hour
- * @m: a variable that serves as the minute
+ *
  * Description:  Does the stuff
  * Return: void
  */
