@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rest_to_98 -  a function name
+ * reset_to_98 -  a function name
  * Description: updates an integer value
  * @n:  a pointer variable
  * Return: n
