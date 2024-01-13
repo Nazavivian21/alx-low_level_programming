@@ -7,35 +7,39 @@
  */
 void print_times_table(int n)
 {
-	int a, b, c;
+	int row, col, result;
 
-	if (n >= 0 && n <= 15)
+	if (n > 15 || n < 0)
+		;
+	else
 	{
-		for (a = 0; a <= n; a++)
+		for (row = 0; row <= n; row++)
 		{
-			_putchar(48);
-			for (b = 1; b <= n; b++)
+			for (col = 0; col <= n; col++)
 			{
-				c = a * b;
-				_putchar(44);
-				_putchar(32);
-				if (c <= 9)
+				result = row * col;
+				if (result < 10)
 				{
-					_putchar(32);
-					_putchar(32);
-					_putchar(c + 48);
+					if (col != 0)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
+					}
+					_putchar('0' + result);
 				}
-				else if (c <= 99)
+				else if (result > 9 && result < 100)
 				{
-					_putchar(32);
-					_putchar((c / 10) + 48);
-					_putchar((c % 10) + 48);
+					print_double(result);
 				}
 				else
 				{
-					_putchar(((c / 100) % 10) + 48);
-					_putchar(((c / 10) % 10) + 48);
-					_putchar((c % 10) + 46);
+					print_tripple(result);
+				}
+
+				if (col != n)
+				{
+					_putchar(',');
 				}
 			}
 			_putchar('\n');
