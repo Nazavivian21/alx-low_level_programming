@@ -6,22 +6,27 @@
  */
 int main(void)
 {
-	int first, second, current, i;
-	
-	first = 0;
-	second = 1;
+	unsigned long int first;
+	unsigned long int second;
+	unsigned long int current;
+	int i;
+	first = 1;
+	second = 2;
 	current = first + second;
-	printf("%d", current);
 
-	for (i = 0; i <= 50; i++)
+	printf("%lu, ", first);
+	for (i = 1; i < 50; i++)
 	{
+		printf("%lu", second);
+		current = first + second;
 		first = second;
 		second = current;
-		current = first + second;
-		printf("%d", current);
 		if (i != 49)
-			printf(", ");
+
+		{
+			printf("  ");
+		}
 	}
-	printf("\n");
-	return (0);
+		printf("\n");
+		return (0);
 }
