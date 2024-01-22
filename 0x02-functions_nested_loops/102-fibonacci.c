@@ -10,6 +10,7 @@ int main(void)
 	unsigned long int second;
 	unsigned long int current;
 	int i;
+
 	first = 1;
 	second = 2;
 	current = first + second;
@@ -24,7 +25,7 @@ int main(void)
 		if (i != 49)
 
 		{
-			printf(",");
+			printf(", ");
 		}
 	}
 		printf("\n");
