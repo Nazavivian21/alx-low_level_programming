@@ -2,7 +2,7 @@
 
 /**
  * _isdigit - a function that checks for a digit
- * Description: checks for a digit 
+ * Description: checks for a digit
  * @c: a varible storing integers
  * Return: 1 on Success and 0 otherwise
  */
