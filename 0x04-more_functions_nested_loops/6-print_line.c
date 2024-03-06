@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_diagonal - prints out diagonal line to the terminal.
+ * print_line - prints out diagonal line to the terminal.
  * Description: this function prints out a diagonal line to the terminal.
  * @n: a variable number that stores the of times the character.
 */
