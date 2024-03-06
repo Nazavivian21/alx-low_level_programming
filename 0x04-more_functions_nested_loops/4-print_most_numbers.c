@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_most_numbers - a function name
- * FDescription: prints out most number
+ * print_most_numbers - prints out most number
+ * Description: prints out numbers from 0 - 9, excluding 2 and 4
  * Return: void
  */
 void print_most_numbers(void)
