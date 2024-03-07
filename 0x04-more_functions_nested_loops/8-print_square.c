@@ -2,6 +2,7 @@
 /**
  * print_square - a function that prints a square.
  * Description: this function prints out a character in for of a square.
+ * @size: a variable used to store the size of the square.
  * Return: void.
  */
 void print_square(int size)
