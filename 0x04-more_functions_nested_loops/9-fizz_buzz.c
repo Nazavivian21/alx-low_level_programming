@@ -1,5 +1,11 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * main - program entry point
+ * Description: the main function uses a loop and
+ *  conditions to print out fizzbuzz.
+ *  Return: an integer.
+ */
 
 int main(void)
 {
