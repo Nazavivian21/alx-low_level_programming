@@ -1,0 +1,1 @@
+This directory implements the use of a Makefile to compile a simple C program. 
