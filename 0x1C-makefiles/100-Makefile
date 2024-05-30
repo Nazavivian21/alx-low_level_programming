@@ -8,7 +8,7 @@ all: $(NAME)
 
 clean:
 	-$(RM) $(NAME)
-	-$(RM) *~
+	-$(RM) *~ .*~
 
 oclean:
 	-$(RM) *.o
