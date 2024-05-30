@@ -1,0 +1,23 @@
+# Variables
+CC = gcc
+SRC = main.c school.c
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+all: $(NAME)
+
+clean:
+	-$(RM) $(NAME)
+	-$(RM) *~
+
+oclean:
+	-$(RM) *.o
+
+fclean: clean oclean
+
+re: fclean all
+
+$(NAME): $(SRC) m.h
+	$(CC) $(CFLAGS) -o $(NAME) $(SRC)
+
+.PHONY: all clean oclean fclean re
