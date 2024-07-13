@@ -5,7 +5,18 @@
  * @s: the string to be reversed
  * Return: Nothing
  */
+int _strlen(char *s)
+{
+	int string_len;
 
+	string_len = 0;
+	while (*s != '\0')
+	{
+		s++;
+		string_len++;
+	}
+	return (string_len);
+}
 void rev_string(char *s)
 {
 	int len;
