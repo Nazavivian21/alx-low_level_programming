@@ -3,8 +3,9 @@
  * _strncat - a function name
  * Description: a function that concatenates two strings
  * @dest: destination string pointer
- * @src source string pointer
- * @n number of bytes to be concatenated
+ * @src: source string pointer
+ * @n: number of bytes to be concatenated
+ * Return: a string
  */
 
 char *_strncat(char *dest, char *src, int n)
