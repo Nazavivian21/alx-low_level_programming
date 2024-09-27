@@ -6,18 +6,22 @@
  *
  * Return: The encoded string.
  */
-char *rot13(char *str) {
-    char *original = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    char *encoded = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-    int i, j;
+char *rot13(char *str) 
+{
+	char *original = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char *encoded = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i, j;
 
-    for (i = 0; str[i] != '\0'; i++) {
-        for (j = 0; original[j] != '\0'; j++) {
-            if (str[i] == original[j]) {
-                str[i] = encoded[j];
-                break;  // Exit the inner loop if a match is found
-            }
-        }
-    }
-    return str;  // Return the encoded string
+	for (i = 0; str[i] != '\0'; i++) 
+	{
+		for (j = 0; original[j] != '\0'; j++) 
+		{
+			if (str[i] == original[j])
+			{
+				str[i] = encoded[j];
+				break;
+			}
+		}
+	}
+	return str;
 }
