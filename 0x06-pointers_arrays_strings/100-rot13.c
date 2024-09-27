@@ -7,15 +7,15 @@
  *
  * Return: The encoded string.
  */
-char *rot13(char *str) 
+char *rot13(char *str)
 {
 	char *original = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *encoded = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	int i, j;
 
-	for (i = 0; str[i] != '\0'; i++) 
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; original[j] != '\0'; j++) 
+		for (j = 0; original[j] != '\0'; j++)
 		{
 			if (str[i] == original[j])
 			{
@@ -24,5 +24,5 @@ char *rot13(char *str)
 			}
 		}
 	}
-	return str;
+	return (str);
 }
