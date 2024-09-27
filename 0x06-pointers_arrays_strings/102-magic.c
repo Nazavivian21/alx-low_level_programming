@@ -1,11 +1,4 @@
 #include <stdio.h>
-/**
- * main - Entry point of the program
- * Description: Modifies a line of code
- * Return: 0 on success
- */
-
-#include <stdio.h>
 
 int main(void)
 {
