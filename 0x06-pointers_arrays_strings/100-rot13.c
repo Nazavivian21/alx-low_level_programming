@@ -2,6 +2,7 @@
 
 /**
  * rot13 - Encodes a string using ROT13.
+ * Description: This function encodes a string using ROT13.
  * @str: The string to be encoded.
  *
  * Return: The encoded string.
