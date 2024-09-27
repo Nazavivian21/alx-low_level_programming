@@ -2,7 +2,9 @@
 #include <stdio.h>
 /**
  * print_number - Prints an integer.
+ * Description: this function prints an interger argument
  * @n: The integer to be printed.
+ * Resturn: void
  */
 void print_number(int n)
 {
